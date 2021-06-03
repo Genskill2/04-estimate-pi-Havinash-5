@@ -3,16 +3,19 @@
 #include <stdio.h>
 #include <math.h>
 
-float wallis_pi(int n);
+float wallis_pi(int n)
 
 {
-  float k=1.0;
-  int i;
-  for(i=1;i,=n;i++)
+  float num=1.0;
+  int i=1;
+  float k;
+  while(i<n)
   {
-    k*=(float)(4*i*i)/(4*i*i-1);
+    k*=(float)4.0*i*i/(4.0*i*i-1);
+    num*=k;
+    i++;
   }
-  return(k*2);
+  return num*2;
 }
 
 
