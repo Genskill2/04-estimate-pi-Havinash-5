@@ -37,6 +37,7 @@ int main(void) {
       abort();
     }
   }
+}
 float mc_pi(int n)
 {
   float x,y;
