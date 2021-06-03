@@ -43,16 +43,19 @@ int main(void)
   }
 }
 
-float mc_pi(int i){
+float mc_pi(int i)
+{
 float x,y,X,Y,Z;
 float c=0;
-	for(int b=i;b>0;b--){
+	for(int b=i;b>0;b--)
+{
 		x=frandom();
 		y=frandom();
 		X=x*x;
 		Y=y*y;
 		Z=X+Y;
-	if(Z<=1){
+	if(Z<=1)
+{
 	c++;
 	}	
 	}
