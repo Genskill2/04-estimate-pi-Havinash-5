@@ -70,8 +70,3 @@ float mc_pi(int n)
    }
   pi=(float)4.0*circle/square;
   return pi;
-}
-  
-
-
-
