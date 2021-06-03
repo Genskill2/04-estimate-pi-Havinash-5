@@ -4,14 +4,13 @@
 #include <math.h>
 
 float wallis_pi(int n)
-
 {
   float num=1.0;
   int i=1;
   float k;
   while(i<n)
   {
-    k*=(float)4.0*i*i/(4.0*i*i-1);
+    k=(float)4.0*i*i/(4.0*i*i-1);
     num*=k;
     i++;
   }
