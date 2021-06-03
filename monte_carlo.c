@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
-float num;
+
 float mc_pi(int);
 
 
