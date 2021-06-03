@@ -37,18 +37,20 @@ float num=1.0;
   }
   return num;
 }
-float wallis_pi(int n){
+float wallis_pi(int n)
+{
   float num=1.0;
   int i=1;
-  float jr;
-   while(i<n){
-        jr=(float)4.0*i*i/(4.0*i*i-1);
+  float k;
+   while(i<n)
+{
+        K=(float)4.0*i*i/(4.0*i*i-1);
        
-        num*=jr;
+        num*=k;
         i++;
         
   }
-  
-   return num*2;
+  num*=2;
+   return num;
  
 }
