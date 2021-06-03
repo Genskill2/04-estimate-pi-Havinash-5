@@ -32,4 +32,5 @@ float wallis_pi(int n)
   }
   return(k*2);
 }
+}
 
