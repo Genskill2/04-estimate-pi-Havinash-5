@@ -7,14 +7,12 @@ float wallis_pi(int n)
 {
   float num=1.0;
   int i=1;
-  float k;
   while(i<n)
   {
-    k=(float)4.0*i*i/(4.0*i*i-1);
-    num*=k;
+    num*=(float)4.0*i*i/(4.0*i*i-1);
     i++;
   }
-  return num*2;
+  return (num*2);
 }
 
 
