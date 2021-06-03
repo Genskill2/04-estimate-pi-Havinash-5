@@ -32,7 +32,7 @@ float num=1.0;
   while(i<n)
   {
     num*=(float)4.0*i*i/(4.0*i*i-1);
-    num*=2;
+    num=2*num;
     i++;
   }
   return num;
