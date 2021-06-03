@@ -37,20 +37,16 @@ float num=1.0;
   }
   return num;
 }
-float wallis_pi(int n)
-{
-  float num=1.0;
-  int i=1;
-  float k;
-   while(i<n)
-{
-        K=(float)4.0*i*i/(4.0*i*i-1);
-       
-        num*=k;
-        i++;
-        
-  }
-  num*=2;
-   return num;
- 
+float wallis_pi(int x){
+	float a,b,c,pi,i;
+	c=1.0;
+         for(i=1;i<=x;i++){
+			a=4*i*i;
+			b=a-1;
+			c=c*(a/b);
+			}
+	pi=2*c;
+	return pi;		
 }
+ 
+
