@@ -10,9 +10,10 @@ float wallis_pi(int n)
   while(i<n)
   {
     num*=(float)4.0*i*i/(4.0*i*i-1);
+    num*=2;
     i++;
   }
-  return (num*2);
+  return num;
 }
 
 
