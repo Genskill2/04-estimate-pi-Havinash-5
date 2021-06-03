@@ -22,7 +22,6 @@ float mc_pi(int n)
     {
       circle+=1;
       square+=1;
-      i++;
     }
     else
     {
