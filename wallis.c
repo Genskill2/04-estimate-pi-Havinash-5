@@ -3,19 +3,8 @@
 #include <stdio.h>
 #include <math.h>
 
-float wallis_pi(int n)
-{
-  float num=1.0;
-  int i=1;
-  while(i<n)
-  {
-    num*=(float)4.0*i*i/(4.0*i*i-1);
-    num*=2;
-    i++;
-  }
-  return num;
-}
-
+float wallis_pi(int);
+  
 
 int main(void) {
   float pi;
@@ -36,3 +25,15 @@ int main(void) {
   }
 }
 
+float wallis_pi(int n)
+{
+float num=1.0;
+  int i=1;
+  while(i<n)
+  {
+    num*=(float)4.0*i*i/(4.0*i*i-1);
+    num*=2;
+    i++;
+  }
+  return num;
+}
